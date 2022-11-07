@@ -1,0 +1,40 @@
+.home {
+padding-top: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100%;
+
+  h1 {
+    font-size: 4em;
+    margin: 0 4px;
+  }
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .floating {
+    height: 400px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 80px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+}

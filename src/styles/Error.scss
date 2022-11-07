@@ -1,0 +1,15 @@
+.error{
+    margin: 10% auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    
+    p{
+        font-size: 1.2em;
+    }
+
+    .error--info{
+        padding:20px 10px;
+    }
+    
+}
