@@ -11,7 +11,7 @@ const Notfound = () => {
         <h2>
             ¡Error 404, casi 418!
         </h2>
-        <p>¿Quieres que te preste un radar? Veo que andas perdido y debes centrarte en la búsqueda de las Bolas de Dragón, el Universo está en peligro y muchos malos vienes a atacarnos  </p>
+        <p>¿Quieres que te preste un radar? Veo que andas perdido y debes centrarte en la búsqueda de las Bolas de Dragón, el Universo está en peligro y muchos malos vienen a atacarnos. </p>
         </div>
     </div>
   )

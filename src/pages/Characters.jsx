@@ -18,19 +18,19 @@ const Characters = () => {
   return (
     <div className="characters--billboard">
       {characters &&
-        characters.map((character, index) => {
-            
-          
+        characters.map((character, index) => {  
           return (
             <div key={character.id} className="card">
               <h3>{character.name}</h3>
               <div className="img--container">
                 <img src={character.imageUrl} alt={character.imageUrl} />
               </div>
-              <p>{character.role}</p>
-              <span>Universo:{character.universe === "0" ? "Por encima de todos" : character.universe}</span>
-              <p>Especie: {character.specie}</p>
-              <Link to={`/characters/${character.name}`}>ver mas</Link>
+              <div className="metadata">
+                <p>{character.role}</p>
+                <p>Universo: {character.universe === "0" ? "Por encima de todos" : character.universe}</p>
+                <p>Especie: {character.specie}</p>
+                <Link to={`/characters/${character.name}`}>ver mas</Link>
+              </div>
             </div>
           );
         })}
