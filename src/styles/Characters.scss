@@ -1,10 +1,15 @@
 .characters--billboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  row-gap: 40px;
   max-width: 80%;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 5%;
+  @media screen and (max-width:700px) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
+  }
 }
 .card {
   background-color: rgba(255, 166, 0, 0.323);
@@ -17,7 +22,11 @@
   padding: 10px;
   text-align: center;
   width: 90%;
-  height: 90%;
+  height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
@@ -34,13 +43,15 @@
       object-fit: contain;
     }
   }
+  
   .metadata {
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    height: 60%;
+
+padding: .5em 0;
+   
     p{
         padding: 0;
         margin: 2px 0;
@@ -56,4 +67,14 @@
       color: blue;
     }
   }
+  button{
+    background-color: aliceblue;
+    padding: 4px;
+    border: 1px solid black;
+  }
+}
+.alone{
+    margin-top: 5%;
+
+
 }

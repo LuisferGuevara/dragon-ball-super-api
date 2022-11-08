@@ -26,9 +26,7 @@ const Characters = () => {
                 <img src={character.imageUrl} alt={character.imageUrl} />
               </div>
               <div className="metadata">
-                <p>{character.role}</p>
-                <p>Universo: {character.universe === "0" ? "Por encima de todos" : character.universe}</p>
-                <p>Especie: {character.specie}</p>
+               
                 <Link to={`/characters/${character.name}`}>ver mas</Link>
               </div>
             </div>

@@ -4,7 +4,7 @@ import "../styles/Navbar.scss"
 
 const Navbar = () => {
   return (
-    <div className='nav'>
+    <div className='navigation'>
     <Link to={""}><img
           src="https://upload.wikimedia.org/wikipedia/commons/2/22/Dragon_Ball_Super.png"
           alt="db"
@@ -15,6 +15,7 @@ const Navbar = () => {
       <NavLink to="about" activeclassname={"active"}>About</NavLink>
       <NavLink to="characters" activeclassname={"active"}>Characters</NavLink>
     </nav>
+    
 
     </div>
   )
