@@ -16,7 +16,7 @@ const CharacterInfo = () => {
     };
 
     getCharacterInfo();
-  }, []);
+  }, );
   return (
     <div key={character.id} className="card alone">
       <h3>{character.name}</h3>
@@ -24,17 +24,10 @@ const CharacterInfo = () => {
         <img src={character.imageUrl} alt={character.imageUrl} />
       </div>
       <div className="metadata">
-      <p>{character.role}</p>
-      <p>Universo: {character.universe === "0" ? "Por encima de todos" : character.universe}</p>
- 
-      <p>Especie: {character.specie}</p>
-
+        <p>{character.role}</p>
+        <p>Universo: {character.universe === "0" ? "Por encima de todos" : character.universe}</p>
+        <p>Especie: {character.specie}</p>
       </div>
-
-
-
-
-
       <button onClick={() => navigate("/characters")}> TODOS LOS PERSONAJES</button>
     </div>
   );
