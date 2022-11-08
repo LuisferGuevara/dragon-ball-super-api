@@ -9,16 +9,17 @@ const Characters = () => {
   useEffect(() => {
     const getCharacters = async () => {
       const res = await axios.get("https://dragon-ball-super-api.herokuapp.com/api/characters");
-      console.log(res);
       setCharacters(res.data);
     };
 
     getCharacters();
   }, []);
   return (
+    <div>
+    <h3 className="h3">TODOS LOS PERSONAJES</h3>
     <div className="characters--billboard">
       {characters &&
-        characters.map((character, index) => {  
+        characters.map((character, index) => {
           return (
             <div key={character.id} className="card">
               <h3>{character.name}</h3>
@@ -26,13 +27,14 @@ const Characters = () => {
                 <img src={character.imageUrl} alt={character.imageUrl} />
               </div>
               <div className="metadata">
-               
-                <Link to={`/characters/${character.name}`}>ver mas</Link>
+                <Link to={`/characters/${character.name}`}> ver mas</Link>
               </div>
             </div>
           );
         })}
     </div>
+    </div>
+    
   );
 };
 
