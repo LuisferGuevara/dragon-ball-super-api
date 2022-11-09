@@ -10,11 +10,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img 
-        src="https://mangaplus.shueisha.co.jp/drm/title/200025/title_thumbnail_portrait_list/14359.jpg?key=ca788148c2faeb3324bcc1a7ae8688d5&duration=86400" 
-            alt="home img"
-            className="home--img floating"
-        />
+        <img src="/assets/goku-blue.png" alt="home img" className="home--img floating" />
       </div>
     </div>
   );

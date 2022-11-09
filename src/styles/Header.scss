@@ -37,6 +37,7 @@
     -webkit-text-fill-color: transparent;
     transition: color 200ms linear;
     font-size: 1.2em;
+
     &:hover {
       transform: scale(1.1);
       background-position: left center;
@@ -49,6 +50,9 @@
     fill: white;
     width: 2em;
     height: 2em;
+  }
+  .linkedin--icon{
+    font-size: 40px;
   }
   button {
     display: none;
